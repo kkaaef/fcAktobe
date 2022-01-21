@@ -1,0 +1,49 @@
+.footter {
+  width: 100%;
+  color: white;
+  background-color: rgb(20, 15, 15);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  opacity: 95%;
+}
+.link {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.register {
+  display: flex;
+  column-gap: 15px;
+  color: unset;
+  text-decoration: none;
+}
+.register a {
+  color: unset;
+  text-decoration: none;
+}
+.log {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 100px;
+}
+.sign {
+  padding: 10px;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 100px;
+}
+
+.log:hover {
+  transition: 1s ease;
+  background-color: rgb(2, 10, 17);
+}
+.sign:hover {
+  transition: 1s ease;
+  background-color: rgb(77, 0, 0);
+  border-color: rgb(77, 0, 0);
+}

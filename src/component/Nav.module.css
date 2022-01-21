@@ -1,0 +1,131 @@
+.nav {
+  position: sticky;
+  top: 0;
+}
+.navDesktop {
+  background-color: rgb(224, 165, 165);
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.navDesktop .link {
+  position: relative;
+  text-decoration: none;
+  color: unset;
+}
+
+.linkContainer {
+  color: rgb(71, 7, 3);
+  font-size: 20px;
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+.dropDown {
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border: 1px solid red;
+  padding: 30px;
+  row-gap: 10px;
+  font-size: 18px;
+  transform: translateX(-20%);
+}
+.dropDown a {
+  text-decoration: none;
+  color: rgb(71, 7, 3);
+}
+.open svg {
+  transform: rotate(180deg);
+}
+
+.navMobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .open svg {
+    transform: rotate(180deg);
+  }
+
+  .dropDown {
+    align-items: flex-start;
+    top: 100%;
+    background-color: white;
+    border: 0.5px solid red;
+    padding: 80px;
+    row-gap: 20px;
+    font-size: 18px;
+    transform: translateX(-84%);
+  }
+
+  .navDesktop {
+    display: none;
+  }
+  .navMobile img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
+  .navMobile {
+    background-color: rgb(224, 165, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    opacity: 100%;
+  }
+
+  .navMobile svg {
+    width: 30px;
+    fill: rgb(71, 7, 3);
+  }
+
+  .navWin {
+    background-color: rgb(224, 165, 165);
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
+  .navWin a {
+    text-decoration: none;
+    padding: 10px;
+    color: unset;
+    color: aliceblue;
+    width: 100%;
+    border-bottom: 3px solid rgb(240, 240, 240);
+  }
+  .navWin a:last-child,
+  .navWin a:first-child {
+    border: none;
+  }
+  .navWin img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .navWin .closeSvg {
+    display: flex;
+    justify-content: space-between;
+  }
+  .closeSvg svg {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    fill: white;
+    cursor: pointer;
+  }
+}

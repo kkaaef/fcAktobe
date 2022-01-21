@@ -1,0 +1,61 @@
+.name {
+  font-weight: bold;
+}
+.large {
+  height: 200px;
+  display: flex;
+  justify-content: ce;
+  align-items: top;
+  color: rgb(0, 0, 0);
+  margin-top: 3%;
+  max-width: 1000px;
+}
+.large img {
+  max-height: 100%;
+  object-fit: contain;
+}
+.large .textContainer {
+  text-align: start;
+  max-width: 50%;
+  padding: 2%;
+}
+.large .name {
+  font-size: 18px;
+}
+
+.middle {
+  max-width: 495px;
+}
+.middle img {
+  max-width: 500px;
+  height: 280px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.middle .textContainer {
+  text-align: left;
+  max-width: 500px;
+}
+.middle .category {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.small {
+  font-size: 16px;
+}
+.small .textContainer {
+  text-align: left;
+  max-width: 250px;
+}
+.small .category {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.small img {
+  max-width: 250px;
+  width: 100%;
+}
+.large:hover {
+  transition: 1s ease;
+  box-shadow: 0px 0px 10px rgb(212, 109, 109);
+}
