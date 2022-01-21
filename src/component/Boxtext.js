@@ -3,7 +3,7 @@ import style from "./Boxtext.module.css"
 const Boxtext = ({name, category, image, size}) =>{
 
 return(
-    
+
     <div className={style[size]} >
     {size!=="large" && <img src={image}></img>}
     <div className={style.textContainer}>
